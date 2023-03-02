@@ -1,4 +1,4 @@
-import java.lang.FdLibm.Pow;
+import java.lang.Math;
 
 public class Lab {
     /**
@@ -21,12 +21,7 @@ public class Lab {
      * @return return a^b using the pow() method of the Math class.
      */
     public double mathPow(double a, double b){
-        double Pow = 1;
-        for (double i = 0; i < b; i++){
-            Pow = a * Pow;
-        }
-    
-        return Pow;
+        return Math.pow(a, b);
     }    
         
 }
